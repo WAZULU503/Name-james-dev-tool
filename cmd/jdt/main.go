@@ -5,8 +5,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/YOURUSERNAME/james-dev-tool/internal/ports"
-	"github.com/YOURUSERNAME/james-dev-tool/internal/ui"
+	"github.com/WAZULU503/Name-james-dev-tool/internal/ports"
+	"github.com/WAZULU503/Name-james-dev-tool/internal/ui"
 )
 
 func main() {
@@ -46,8 +46,8 @@ func main() {
 			}
 
 			port, _ := strconv.Atoi(os.Args[3])
-			err := ports.KillPort(port)
 
+			err := ports.KillPort(port)
 			if err != nil {
 				fmt.Println(err)
 			}
@@ -55,7 +55,6 @@ func main() {
 		case "f", "free":
 
 			err := ports.FreePorts()
-
 			if err != nil {
 				fmt.Println(err)
 			}

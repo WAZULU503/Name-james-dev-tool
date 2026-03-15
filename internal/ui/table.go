@@ -4,15 +4,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/YOURUSERNAME/james-dev-tool/internal/ports"
+	"github.com/WAZULU503/Name-james-dev-tool/internal/ports"
 )
 
 func PrintTable(items []ports.PortInfo) {
 
 	if len(items) == 0 {
-
 		fmt.Println("No common dev ports detected.")
-
 		return
 	}
 
